@@ -353,12 +353,6 @@ export default function ResultsSection() {
             No results match these filters. Try another search.
           </div>
         )}
-        <p className="results-note">
-          Only numerical assessment results above 70% are shown. WA = Weighted
-          Assessment. Percentages are calculated from the marks supplied;
-          results from different schools or papers may not be directly
-          comparable. Student names are not displayed.
-        </p>
       </div>
     </section>
   );
