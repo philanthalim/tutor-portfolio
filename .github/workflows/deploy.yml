@@ -35,7 +35,7 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy ./out --project-name=math-with-purpose --branch=main
+          command: deploy
 
       - name: Deploy dev (dev)
         if: github.ref == 'refs/heads/dev'
@@ -43,4 +43,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy ./out --project-name=math-with-purpose --branch=dev
+          command: deploy
